@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
-import homeIcon from "../assets/homeIcon.png";
+import logo from "../assets/pageCraftLogo.png";
+import books from "../assets/books.png";
+import bookshelf from "../assets/bookshelf.png";
 import "../App.css";
 
 export default function Navbar() {
     return (
-        <div className="background-container">
-            <Link to="/" className="navLogo" >
-            <img src={homeIcon} alt="pagecraft logo" width="200" height="300" />
-          </Link>
+        <div className="nav-bar">
+            <img style={{ width: 180, height: 180}} src={logo} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={bookshelf} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={bookshelf} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={bookshelf} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={bookshelf} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={bookshelf} alt="Logo" />
+            <img style={{ width: 180, height: 180}} src={books} alt="Logo" />
 
           {/* project title */}
           {/* undo button */}
