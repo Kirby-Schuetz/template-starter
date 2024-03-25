@@ -14,14 +14,14 @@ import "../App.css";
 const Toolbar = ({ setLineColor, setLineWidth, setLineOpacity }) => {
     return (
         <div className="Toolbar">
-            <label>Brush Color</label>
+            <label>Brush Color:</label>
             <input
                 type="color"
                 onChange={(e) => {
                     setLineColor(e.target.value);
                 }}
                 />
-                <label>Brush Width</label>
+                <label>Brush Width:</label>
                 <input
                     type="range"
                     min="3"
@@ -30,7 +30,7 @@ const Toolbar = ({ setLineColor, setLineWidth, setLineOpacity }) => {
                         setLineWidth(e.target.value);
                     }}
                     />
-                <label>Brush Opacity</label>
+                <label>Brush Opacity:</label>
                 <input
                      type="range"
                      min="1"
